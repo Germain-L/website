@@ -10,10 +10,12 @@ class SkillCard extends StatelessWidget {
     final cardColor = themeSwitcher.isLightTheme ? Color(0xff303030) : Color(0xffEEEEEE);
     final skillTextColor = themeSwitcher.isLightTheme ? Color(0xffEEEEEE) : Color(0xff303030);
 
-    final screenWidth = MediaQuery.of(context).size.width;
     return Container(
       width: 600,
       child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(25)
+        ),
         child: Container(
           color: cardColor,
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
