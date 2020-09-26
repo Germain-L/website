@@ -5,6 +5,7 @@ import 'package:website/pages/home_page.dart';
 import 'package:website/providers/theme_provider.dart';
 
 import 'app.dart';
+import 'providers/orientaion_provider.dart';
 
 void main() {
   runApp(
@@ -12,6 +13,9 @@ void main() {
       providers: [
         ChangeNotifierProvider(
           create: (_) => ThemeSwitcher(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => OrientationProvider(),
         )
       ],
       child: App(),
