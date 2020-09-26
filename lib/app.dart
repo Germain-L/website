@@ -8,7 +8,11 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeSwitcher = Provider.of<ThemeSwitcher>(context);
     return MaterialApp(
-      theme: themeSwitcher.isLightTheme ? ThemeData.dark() : ThemeData.light(),
+      debugShowCheckedModeBanner: false,
+      themeMode: themeSwitcher.isLightTheme ? ThemeMode.light : ThemeMode.dark,
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(
+      ),
       routes: {
         'home': (context) => Home(),
       },
@@ -16,3 +20,4 @@ class App extends StatelessWidget {
     );
   }
 }
+
