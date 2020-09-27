@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:website/providers/theme_provider.dart';
-import 'package:website/widgets/home/skills_widget.dart';
+import 'package:website/widgets/old_home/skills_widget.dart';
 
 class SkillCard extends StatelessWidget {
   @override

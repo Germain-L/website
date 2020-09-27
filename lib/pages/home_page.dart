@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/core/theme_button_widget.dart';
-import '../widgets/home/skill_card.dart';
-import '../widgets/home/title.dart';
+import '../widgets/old_home/skill_card.dart';
+import '../widgets/old_home/title.dart';
 
 class Home extends StatelessWidget {
   @override
